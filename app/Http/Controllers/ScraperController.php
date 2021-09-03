@@ -12,7 +12,7 @@ class ScraperController extends Controller
     public function index()
     {
         $client = new Client();
-        $url ='https://www.worldometers.info/coronavirus/country/japan/';
+        $url ='\some_url';
         $page = $client->request('GET', $url);
 
         
