@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/scraper', function () {
+//     return view('scraper');
+// });
+
+Route::get('/scraper', [App\Http\Controllers\ScraperController::class, 'index'])->name('scraper');
